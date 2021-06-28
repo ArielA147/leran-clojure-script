@@ -1,0 +1,40 @@
+{:paths ["src" "resources"]
+
+ :deps
+ {org.clojure/clojure  {:mvn/version "1.10.3"}
+
+  ;; App setup & config
+  integrant/integrant {:mvn/version "0.8.0"}
+  integrant/repl      {:mvn/version "0.3.2"}
+  aero/aero           {:mvn/version "1.1.6"}
+
+  ;; Logging
+  com.lambdaisland/glogi         {:mvn/version "1.0.116"}
+  io.pedestal/pedestal.log       {:mvn/version "0.5.8"}
+  ch.qos.logback/logback-classic {:mvn/version "1.2.3"}
+
+  ;; HTTP
+  ring/ring-defaults      {:mvn/version "0.3.2"}
+  metosin/reitit          {:mvn/version "0.5.12"}
+  ring/ring-jetty-adapter {:mvn/version "1.9.0"}
+
+  ;; HTTP / CSS (Server-side)
+  lambdaisland/webstuff {:git/url "https://github.com/lambdaisland/webstuff"
+                         :sha     "b44d3d93fdfdcacc006e03b82a04a6f73833db8e"}
+
+  ;; ClojureScript
+  reagent/reagent            {:mvn/version "1.0.0"}
+  applied-science/js-interop {:mvn/version "0.2.7"}
+  mhuebert/kitchen-async     {:mvn/version "0.1.0"}
+  lambdaisland/fetch         {:mvn/version "0.0.23"}
+ }
+ 
+ 
+ :aliases
+ {:dev
+  {:extra-paths ["dev"]
+   :extra-deps  {}}
+
+  :test
+  {:extra-paths ["test"]
+   :extra-deps  {lambdaisland/kaocha {:mvn/version "1.0.632"}}}}}

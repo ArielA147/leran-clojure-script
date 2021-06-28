@@ -1,0 +1,8 @@
+#'learn-fe/simple-component
+clj꞉learn-fe꞉> 
+; Syntax error compiling at (c:\Users\User\IdeaProjects\reagent-practice\src\learn-fe.clj:6:18).
+; No such var: r/atom
+clj꞉learn-fe꞉> 
+; Syntax error compiling at (c:\Users\User\IdeaProjects\reagent-practice\src\learn-fe.clj:13:18).
+; No such var: r/atom
+clj꞉learn-fe꞉> 
