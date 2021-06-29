@@ -1,0 +1,6 @@
+{:deps     {:aliases [:dev]}
+ :dev-http {4828 "classpath:public"} ;; running the project in port 4828, working from the path of public
+ :builds   {:app {:target     :browser
+                  :output-dir "resources/public/out" ;; where the compiled stuff will be written
+                  :asset-path "/out"
+                  :modules    {:main {:entries [capy.bara]}}}}}
